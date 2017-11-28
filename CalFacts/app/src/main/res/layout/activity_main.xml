@@ -1,0 +1,130 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="How much do you know about California?"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            style="@style/HeaderTextStyle"
+            android:text="What is the population of California?" />
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radioGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/onemil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onRadioButtonClickedOne"
+                android:text="1 Million" />
+
+            <RadioButton
+                android:id="@+id/realpopulation"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onRadioButtonClickedOne"
+                android:text="39 Million" />
+
+            <RadioButton
+                android:id="@+id/onebil"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:onClick="onRadioButtonClickedOne"
+                android:text="1 Billion" />
+
+
+        </RadioGroup>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tvDetails1"
+            style="@style/HeaderTextStyle"
+            android:text="@string/tv_details1" />
+
+        <CheckBox
+            android:id="@+id/la_chxbx"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/city2" />
+
+        <CheckBox
+            android:id="@+id/sf_chkbx"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/city1" />
+
+        <CheckBox
+            android:id="@+id/juno_chkbx"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/city4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tvDetails2"
+            style="@style/HeaderTextStyle"
+            android:text="@string/tv_details2" />
+
+        <CheckBox
+            android:id="@+id/redwoods_chkbx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/plant" />
+
+        <CheckBox
+            android:id="@+id/bears_chkbx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/animal" />
+
+        <CheckBox
+            android:id="@+id/cantaloupe_chkbx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/food" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@android:color/darker_gray" />
+
+        <EditText
+            android:id="@+id/des_q"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Describe California in 1 sentence."
+            android:inputType="text"
+            android:textSize="14sp"
+            android:textStyle="italic" />
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="submitButton"
+            android:text="Submit" />
+    </LinearLayout>
+</ScrollView>
